@@ -1,0 +1,35 @@
+.fileContainer {
+	position: absolute;
+	top: 20%;
+	left: 250px;
+	bottom: 0;
+	right: 0;
+	padding: 10px;
+	overflow-y: scroll;
+	overflow-x: scroll;
+	background-color: rgb(129, 129, 129);
+}
+
+table {
+	margin: 0 auto;
+	margin-bottom: 40px;
+	border-collapse: collapse;
+	border: 2px black solid;
+	font-size: 16px;
+}
+
+table thead tr th {
+	border: 2px black solid;
+	background-color: #A9D08E;
+}
+
+td {
+	background-color: #BFBFBF;
+	min-width: 100px;
+	border: 1px black solid;
+	padding: 5px;
+}
+
+th {
+	padding: 0 20px;
+}

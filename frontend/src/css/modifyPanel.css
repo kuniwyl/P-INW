@@ -1,0 +1,124 @@
+div.modifyPanel {
+	position: fixed;
+	top: 0;
+	bottom: calc(80% - 1px);
+	left: 0%;
+	width: 100%;
+	background-color: rgb(68, 68, 68);
+	border-bottom: 3px solid black;
+}
+
+.choseModification {
+	background-color: white;
+	width: 100%;
+	position: absolute;
+	top: 0;
+	bottom: 70%;
+	border-bottom: 3px solid black;
+}
+
+.modyfiSelector {
+	display: flex;
+	padding: 5px 10px 0 10px;
+	height: 100%;
+	list-style: none;
+	background-color: rgb(46, 46, 46);
+	color: rgb(141, 141, 141);
+}
+
+.modyfiSelector li{
+	position: relative;
+	line-height: 100%;
+	padding: 0;
+	margin: 0;
+	width: 150px;
+	text-align: center;
+	border: 2px solid transparent;
+	transform: translateY(4px);
+	border-top-left-radius: 10px;
+	border-top-right-radius: 10px;
+}
+
+.modyfiSelector .activeSelector {
+	font-weight: 400;
+	border: solid black 1px;
+	color: rgb(255, 255, 255);
+	background-color: rgb(68, 68, 68);
+	border-bottom: 3px solid rgb(68, 68, 68);
+}
+
+.modyfiPanel {
+	position: absolute;
+	display: flex;
+	flex-direction: row;
+	top: 30%;
+	bottom: -1px;
+	background-color: rgb(68, 68, 68);
+}
+
+.functionChoice {
+	width: 200px;
+	padding: 5px 25px;
+	border-right: 2px solid black;
+	float: left;
+}
+
+.functionLabel {
+	padding: 3px;
+	font-size: 13px;
+	text-align: center;
+	color: rgb(224, 224, 224);
+	display: block;
+	width: 100%;
+}
+
+.functionInput, .functionButton, .CSVLINK {
+	display: block;
+	margin: 2px auto;
+	padding: 2px;
+	font-size: 13px;
+	text-indent: 4px;
+	color: rgb(224, 224, 224);
+	display: block;
+	width: 100%;
+	border-radius: 5px;
+	background-color: transparent;
+}
+
+.functionInput::placeholder {
+	color: rgb(224, 224, 224);
+}
+
+.CSVLINK {
+	text-align: center;	
+	text-decoration: none;
+	border: 2px solid black;
+}
+
+select {
+	-webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;       /* Remove default arrow */
+  
+}
+
+.select-items div,.select-selected {
+  color: #ffffff;
+  padding: 8px 16px;
+  border: 1px solid transparent;
+  border-color: transparent transparent rgba(0, 0, 0, 0.1) transparent;
+  cursor: pointer;
+}
+
+.functionChoiceWhere {
+	width: 200px;
+	border: none;
+}
+
+.functionButtonWhere {
+	display: block;
+	position: absolute;
+	width: 150px;
+	top: 50%;
+	transform: translateY(-50%);
+}

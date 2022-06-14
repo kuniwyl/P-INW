@@ -1,0 +1,85 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    overflow: hidden;
+    background: linear-gradient(-45deg, #ee7752, #e73c7e, #568394, #23d5ab);
+	background-size: 400% 400%;
+	animation: gradient 10s ease infinite;
+	height: 100vh;
+}
+
+@keyframes gradient {
+	0% {
+		background-position: 0% 50%;
+	}
+	50% {
+		background-position: 100% 50%;
+	}
+	100% {
+		background-position: 0% 50%;
+	}
+}
+
+
+.fullScreen {
+    position: fixed;
+    margin: 0;
+    transition: .5s;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+}
+
+.positionCenter {
+    display: block;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translateX(-50%) translateY(-50%);
+}
+
+input, button {
+    display: block;
+    padding: 20px;
+    margin: 5px;
+    border: 2px solid black;
+    border-radius: 10px;
+    width: 300px;
+    font-size: 16px;
+}
+
+.inputError {
+    color: red;
+    padding: 0 10px;
+}
+
+button, .submit {
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.goToRegisterButton {
+    top: 90%;
+    margin: 0;
+}
+
+.goToLoginButton {
+    top: 10%;
+    margin: 0;
+}
+
+.setLoginUp {
+    transform: translateY(-100%);
+}
+
+.register {
+    transform: translateY(100%);
+}
